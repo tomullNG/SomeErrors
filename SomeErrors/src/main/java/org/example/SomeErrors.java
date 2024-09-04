@@ -116,16 +116,13 @@ public class SomeErrors {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Which product do you want to search?");
-        String product = input.next();
-        int i = 0;
+        String product = input.nextLine();
 
-        for (String s : products) {
-            if (s != null && s.equals(product)) {
-                System.out.println("product " + products[i]);
-                System.out.println("price " + prices[1]);
+        for (int i = 0; i < products.length; i++) {
+            if (products[i] != null && product.equals(products[i])) {
+                System.out.print("\nProduct: " + products[i]);
+                System.out.println("\nPrice: " + prices[i]);
             }
-            i++;
-
         }
     }
 
