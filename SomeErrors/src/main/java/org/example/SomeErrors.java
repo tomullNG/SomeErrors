@@ -136,10 +136,10 @@ public class SomeErrors {
             }
             numberOfProducts++;
             if (prices[i] > prices[indexExpensive]) {
-                indexCheapest = i;
+                indexExpensive = i;
             }
             if (prices[i] < prices[indexCheapest]) {
-                indexExpensive = i;
+                indexCheapest = i;
             }
         }
 
