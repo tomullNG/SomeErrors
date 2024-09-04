@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 @SuppressWarnings("ALL")
@@ -172,28 +173,21 @@ public class SomeErrors {
         for (int i = 0; i < products.length; i++) {
             if (products[i] != null){
                 numberOfProducts++;
-                totalCost = totalCost + prices[i];
+                totalCost += prices[i];
             }
         }
-
         if (numberOfProducts>0){
-            numberOfProducts = 0;
             System.out.printf("Average price for all products %.2f%n" , (totalCost / numberOfProducts));
         }
-
     }
 
     public static void emptyList(String[] products, int[] prices) {
-
         for (int i = 0; i < products.length; i++) {
             products[i] = null;
             prices[i] = 0;
         }
 
         System.out.println("The list is empty");
-
     }
 
 }
-
-
