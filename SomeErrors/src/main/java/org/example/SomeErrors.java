@@ -77,11 +77,11 @@ public class SomeErrors {
 
         System.out.println("Enter a product");
         String product = input.nextLine();
-        products[emptyIndex++] = product;
+        products[emptyIndex] = product;
 
         System.out.println("Enter price");
         int price = input.nextInt();
-        prices[emptyIndex  ] = price;
+        prices[emptyIndex++] = price;
 
     }
 
