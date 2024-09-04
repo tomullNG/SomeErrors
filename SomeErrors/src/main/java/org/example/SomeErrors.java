@@ -102,14 +102,11 @@ public class SomeErrors {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Which product do you want to remove?");
-        String product = input.next();
-        int i = 0;
-
-        for (String s : products) {
-            if (s != null && s.equals(product)) {
+        String product = input.nextLine();
+        for (int i = 0; i < products.length; i++){
+            if (products[i] != null && product.equals(products[i])){
                 products[i] = null;
                 prices[i] = 0;
-                i++;
             }
         }
 
