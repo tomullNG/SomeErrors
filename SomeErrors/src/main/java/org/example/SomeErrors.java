@@ -158,9 +158,8 @@ public class SomeErrors {
 
     public static void totalCostProduct(String[] products, int[] prices) {
         int totalCost = 0;
-        int i;
-        for (i = 0; i < products.length-1; i++);{
-            totalCost = totalCost + prices[i];
+        for (int i = 0; i < products.length; i++) {
+            totalCost += prices[i];
         }
 
         System.out.println("Total price for all products " + totalCost);
