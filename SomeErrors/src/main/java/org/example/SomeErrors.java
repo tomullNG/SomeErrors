@@ -76,7 +76,7 @@ public class SomeErrors {
         }
 
         System.out.println("Enter a product");
-        String product = input.next();
+        String product = input.nextLine();
         products[emptyIndex++] = product;
 
         System.out.println("Enter price");
