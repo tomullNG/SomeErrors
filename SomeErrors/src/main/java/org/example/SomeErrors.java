@@ -48,6 +48,7 @@ public class SomeErrors {
                     break;
                 case 7:
                     averagePriceProduct(products, prices);
+                    break;
                 case 8:
                     emptyList(products, prices);
                     break;
